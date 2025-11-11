@@ -22,4 +22,7 @@ python main.py
 
 # 5. Deactivate virtual environment
 deactivate
+
+#6. When new dependency is added, run
+pip freeze > requirements.txt
 ```

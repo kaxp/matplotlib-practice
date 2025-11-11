@@ -15,7 +15,7 @@ y_data = np.random.random(1000) * 100
 # s is for marker size
 # plt.scatter(x_data, y_data,  c="#00f", marker='*', s= 100)
 
-# alpha help create transparency, so we can see heatmap when markers overlaps 
-plt.scatter(x_data, y_data,  c="#00f", marker='*', s= 100, alpha=0.3)
+# alpha help create transparency, so we can see heatmap when markers overlaps
+plt.scatter(x_data, y_data, c="#00f", marker="*", s=100, alpha=0.3)
 
 plt.show()

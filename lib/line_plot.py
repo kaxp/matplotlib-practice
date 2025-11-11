@@ -38,6 +38,8 @@ plt.title('Median Salary (USD) by Age')
 # plots in a single graph
 plt.legend(loc="lower right")
 
+plt.grid(True)
+
 # On some display the padding is not correct so we use this
 plt.tight_layout()
 

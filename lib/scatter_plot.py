@@ -1,21 +1,32 @@
-import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
 
-x_data = np.random.random(1000) * 100
-y_data = np.random.random(1000) * 100
+plt.style.use("seaborn-v0_8")
 
-# plt.scatter(x_data, y_data)
+data = pd.read_csv("lib/data/youtube_view_to_like_ratio.csv")
+view_counts = data["view_count"]
+likes = data["likes"]
+ratio = data["ratio"]
 
-# Make marker color to blue
-# plt.scatter(x_data, y_data, c="#00f")
+plt.scatter(
+    view_counts,
+    likes,
+    c=ratio,
+    cmap="summer",
+    edgecolors="black",
+    linewidths=1,
+    alpha=0.75,
+)
+cbar = plt.colorbar()
+cbar.set_label("Like/Dislike Ratio")
 
-# Make marker as *
-# plt.scatter(x_data, y_data, c="#00f", marker='*')``
+# Show x and y label in logarithmic values to make this particualar graph better
+# as without it, lot of points are overlapping on each other
+plt.xscale("log")
+plt.yscale("log")
+plt.title("Trending Youtube Videos")
+plt.xlabel("View Count")
+plt.ylabel("Total Likes")
 
-# s is for marker size
-# plt.scatter(x_data, y_data,  c="#00f", marker='*', s= 100)
-
-# alpha help create transparency, so we can see heatmap when markers overlaps
-plt.scatter(x_data, y_data, c="#00f", marker="*", s=100, alpha=0.3)
-
+plt.tight_layout()
 plt.show()

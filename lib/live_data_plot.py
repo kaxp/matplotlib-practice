@@ -1,5 +1,3 @@
-import random
-from itertools import count
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
@@ -8,13 +6,6 @@ from matplotlib.animation import FuncAnimation
 #! for live data feed.
 #! in lib/data/ run `python dynamic_data_gen.py``
 #! when finish, stop the data generation
-
-plt.style.use("seaborn-v0_8")
-
-x_vals = []
-y_vals = []
-
-index = count()
 
 
 def animate(i):
@@ -25,17 +16,20 @@ def animate(i):
 
     # Clear axis before plotting the updated graph
     plt.cla()
-
     plt.plot(x, y1, label="Channel 1")
     plt.plot(x, y2, label="Channel 2")
-
     plt.legend(loc="upper left")
+
+
+def main():
+    plt.style.use("seaborn-v0_8")
+
+    # interval is in milliseconds
+    # gcf => get current figure
+    anim = FuncAnimation(plt.gcf(), animate, interval=1000)
     plt.tight_layout()
+    plt.show()
 
 
-# interval is in milliseconds
-# gcf => get current figure
-ani = FuncAnimation(plt.gcf(), animate, interval=1000)
-
-plt.tight_layout()
-plt.show()
+if __name__ == "__main__":
+    main()

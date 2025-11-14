@@ -34,7 +34,7 @@ pip freeze > requirements.txt
 ## Project Structure
 
 ```
-images/                      # Images of plots
+images/                       # Images of plots
 lib/
  ├── data/                    # CSV files used in some plots
  ├── bar_plot.py
@@ -70,14 +70,14 @@ Example:
 python lib/bar_plot.py
 ```
 
-### Live Dynamic Plot
+### For Live Data Plot
 
 ```bash
 # Terminal 1 – generate data continuously
 python lib/data/dynamic_data_gen.py
 
 # Terminal 2 – show the live plot
-python lib/dynamic_data_plot.py
+python lib/live_data_plot.py
 ```
 
 ---

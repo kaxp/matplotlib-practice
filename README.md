@@ -94,7 +94,7 @@ Below are all plot types included in this project, with script links and image p
 **Data:** `languages.csv`  
 <br>
 
-![Bar Plot](images/bar_plot.png)
+<img src="images/bar_plot.png" width="450">
 
 ---
 
@@ -104,7 +104,7 @@ Below are all plot types included in this project, with script links and image p
 **Data:** `ages.csv`  
 <br>
 
-![Histogram](images/histogram_plot.png)
+<img src="images/histogram_plot.png" width="450">
 
 ---
 
@@ -114,7 +114,7 @@ Below are all plot types included in this project, with script links and image p
 **Data:** `salary.csv`  
 <br>
 
-![Line Area Plot](images/line_area_plot.png)
+<img src="images/line_area_plot.png" width="450">
 
 ---
 
@@ -124,7 +124,7 @@ Below are all plot types included in this project, with script links and image p
 **Data:** `youtube_view_to_like_ratio.csv`  
 <br>
 
-![Scatter Plot](images/scatter_plot.png)
+<img src="images/scatter_plot.png" width="450">
 
 ---
 
@@ -134,7 +134,7 @@ Below are all plot types included in this project, with script links and image p
 **Data:** `bitcoin_price.csv`  
 <br>
 
-![Time Series](images/time_series_plot.png)
+<img src="images/time_series_plot.png" width="450">
 
 ---
 
@@ -153,7 +153,7 @@ Below are all plot types included in this project, with script links and image p
 **Script:** [`3d_plot.py`](lib/3d_plot.py)  
 <br>
 
-![3D Plot](images/3d_plot.png)
+<img src="images/3d_plot.png" width="450">
 
 ---
 
@@ -162,7 +162,7 @@ Below are all plot types included in this project, with script links and image p
 **Script:** [`pie_plot.py`](lib/pie_plot.py)  
 <br>
 
-![Pie Plot](images/pie_plot.png)
+<img src="images/pie_plot.png" width="450">
 
 ---
 
@@ -171,6 +171,8 @@ Below are all plot types included in this project, with script links and image p
 **Script:** [`box_plot.py`](lib/box_plot.py)  
 <br>
 
+<img src="images/box_plot.png" width="450">
+
 ---
 
 ## 10. Stack Plot
@@ -178,7 +180,7 @@ Below are all plot types included in this project, with script links and image p
 **Script:** [`stack_plot.py`](lib/stack_plot.py)  
 <br>
 
-![Stack Plot](images/stack_plot.png)
+<img src="images/stack_plot.png" width="450">
 
 ---
 
@@ -187,4 +189,4 @@ Below are all plot types included in this project, with script links and image p
 **Script:** [`sub_plot.py`](lib/sub_plot.py)  
 <br>
 
-![Sub Plot](images/sub_plot.png)
+<img src="images/sub_plot.png" width="450">

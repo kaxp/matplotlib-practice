@@ -12,7 +12,7 @@ def main():
     py_salaries = data["Python"]
     js_salaries = data["JavaScript"]
 
-    ###! The below is for 2 figures in two seperate figure
+    ###! This code is to display 2 plots in two seperate figures
     # fig1, ax1 = plt.subplots()
     # fig2, ax2 = plt.subplots()
 
@@ -30,10 +30,9 @@ def main():
     # ax2.set_ylabel("Median Salary (USD)")
 
     # plt.tight_layout()
-
     # plt.show()
 
-    ###! The below is for 2 figures in single figure
+    ###! This code is to display 2 plots in a single figure
     fig, (ax1, ax2) = plt.subplots(nrows=2, ncols=1, sharex=True)
 
     ax1.plot(ages, dev_salaries, color="#444444", linestyle="--", label="All Devs")
@@ -50,7 +49,6 @@ def main():
     ax2.set_ylabel("Median Salary (USD)")
 
     plt.tight_layout()
-
     plt.show()
 
     # To save figures

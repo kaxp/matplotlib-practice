@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # we plot histogram in bins. So let's say we have hundreds of data that we
 # need to plot and if using Bar or other graph its not good as the data will
 # clatter. So in those conditions we use histogram where we define bins.
-# For e.g if we define bins = 5, then it means over entire data in graph will
+# For e.g if we define bins = 5, then it means our entire data in graph will
 # be divided and plotted in 5 sections(bins)
 def main():
     plt.style.use("fivethirtyeight")
